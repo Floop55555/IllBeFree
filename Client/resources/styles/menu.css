@@ -1,0 +1,9 @@
+.square:before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    border-style: outset;
+    border-color: rgb(43, 43, 42);
+}
