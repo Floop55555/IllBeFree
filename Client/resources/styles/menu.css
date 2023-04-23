@@ -1,9 +1,25 @@
-.square:before{
-    content: "";
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-color: rgb(255, 255, 255);
-    border-style: outset;
-    border-color: rgb(43, 43, 42);
+table{
+  position: fixed;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.square:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  border-style: outset;
+  border-color: rgb(43, 43, 42);
+}
+img{
+  width: 50px;
+  height: 50px;
 }
