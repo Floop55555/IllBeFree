@@ -1,10 +1,10 @@
 function onLoad() {
-    let count = Number(sessionStorage.getItem("completed"))
-    if(count<1)
-    {
+    // let count = Number(sessionStorage.getItem("completed"))
+    // if(count<1)
+    // {
       sessionStorage.setItem("completed", "1")
-    };
-    sessionStorage.setItem("completed", count);
+    // };
+    // sessionStorage.setItem("completed", count);
     let date = document.getElementById("one");
     let entry = document.getElementById("two");
     let button = document.getElementById("three");
