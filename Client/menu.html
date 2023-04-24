@@ -10,13 +10,22 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
     <link rel="stylesheet" href="./resources/styles/menu.css" />
     <script src="./resources/scripts/menu.js"></script>
-    <title>Menu</title>
+     <title>Menu</title>
   </head>
   <body onload="onLoad()">
-    <table>
-      <tr>
+    <h1>Pick a Pattern</h1>
+    <ul>
+      <li id = "journal"><a href="contact.asp">journal</a></li>
+      <li id = "rules"><a href="news.asp">rules</a></li>
+      <li id = "passcode"><a href="contact.asp">passcode</a></li>
+      <li id = "leave"><a href="about.asp">leave</a></li>
+    </ul> 
+    <div class= "main">
+      <table>
+        <tr>
         <td
           id="puzzle1"
           onclick="loadPuzzle('\loop.html')"
@@ -59,5 +68,6 @@
         <td id="puzzle25"></td>
       </tr>
     </table>
+  </div>
   </body>
 </html>

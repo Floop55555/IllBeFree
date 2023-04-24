@@ -2,6 +2,7 @@ function loadPuzzle(url)
 {
     location.href = ""+url;
 }
+
 function onLoad(){
 let puzzle1 = document.getElementById("puzzle1");
 let completed = Number(sessionStorage.getItem("completed"));
@@ -58,12 +59,29 @@ function Puzzle3(){
   let puzzle = document.getElementById("puzzle3");
   let completed = Number(sessionStorage.getItem("completed"));
   console.log(completed);
-    if(completed>2)
+    if(completed>3)
     {
     let img = document.createElement("img");
-    img.src = "\ resources/assets/pictures/slipper.png";
+    img.src = "\ resources/assets/pictures/letter.png";
     puzzle.appendChild(img);
     Puzzle4()
+  }
+  else{
+    let img = document.createElement("img");
+    img.src = "\ resources/assets/pictures/wip.png";
+    puzzle.appendChild(img);
+  };
+};
+function Puzzle4(){
+  let puzzle = document.getElementById("puzzle3");
+  let completed = Number(sessionStorage.getItem("completed"));
+  console.log(completed);
+  if(completed>4)
+  {
+    let img = document.createElement("img");
+    img.src = "\ resources/assets/pictures/bird.png";
+    puzzle.appendChild(img);
+    Puzzle5()
   }
   else{
     let img = document.createElement("img");
