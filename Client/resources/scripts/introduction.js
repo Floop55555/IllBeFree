@@ -74,6 +74,7 @@ function fadeTextTitle() {
   text.appendChild(document.createElement("br"));
   text.innerText += "By: Max S.";
   text.appendChild(document.createElement("br"));
+  text.appendChild(document.createElement("br"));
   let button = document.createElement("button");
   button.textContent = "Start";
   button.addEventListener("click", function (event) {

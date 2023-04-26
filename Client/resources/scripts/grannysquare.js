@@ -24,6 +24,7 @@ function setUpPuzzle()
     puzzle.classList.add("fullscreen")
     let table = document.createElement("table");
     table.classList.add("center");
+    table.classList.add("fade-in-text");
     let list=0;
     let i=0
     let div = document.createElement("td");

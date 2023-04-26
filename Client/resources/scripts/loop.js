@@ -14,34 +14,36 @@ function setUpPuzzle()
     puzzle.classList.add("fullscreen")
     let table = document.createElement("table");
     table.classList.add("center");
+    table.classList.add("fade-in-text");
     let list=0;
     let i=0
     let div = document.createElement("td");
     //cell0.classList.add("square")
-    div.style.width="25px";
+    //div.style.width="25px";
     let tr= document.createElement("tr");
     let stop=0;
     let count = 0;
     //blank cell
     let td = document.createElement("td");
-    td.style.width="25px";
+    //td.style.width="25px";
     tr.appendChild(td);
     //add top puzzle key
     puzzle1.puzzleKey.forEach(key => {
-        if (stop<puzzle1.puzzleWidth)
-        {
-            if(key==-1)
+
+            if (stop<puzzle1.puzzleWidth)
             {
-                tr.appendChild(div);
-                div = document.createElement("td");
-                div.style.width="25px";
-                count++;
-                stop++;
-            }
-            else
-            {
-                let text= `${key}`;
-                text += '\n';
+                if(key==-1)
+                {
+                    tr.appendChild(div);
+                    div = document.createElement("td");
+                    //div.style.width="25px";
+                    count++;
+                    stop++;
+                }
+                else
+                {
+                    let text= `${key}`;
+                    text += '\n';
                 let br = document.createElement("br");
                 div.appendChild(document.createTextNode(text));
                 div.appendChild(br);
@@ -49,6 +51,7 @@ function setUpPuzzle()
                 count++
             };
         };
+
     });
     //let tr = document.createElement("tr");
     table.appendChild(tr);
@@ -77,8 +80,8 @@ function setUpPuzzle()
             // box.type= "checkbox";
             //let box=document.createElement("button");
             cell.id = list;
-            cell.style.height="25px";
-            cell.style.width="25px";
+            // cell.style.height="25px";
+            // cell.style.width="25px";
             function onClick(){clickButton(cell)};
             cell.addEventListener("click", onClick);
             //box.classList.add("btn"); 
